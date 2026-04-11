@@ -1,0 +1,335 @@
+/* version 0.5 */
+
+/* 폰트 선언 */
+@font-face {
+    font-family: 'TTHakgyoansimMonggeulmonggeulR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMonggeulmonggeulR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 모든 태그에 적용 */
+*{
+    font-family: TTHakgyoansimMonggeulmonggeulR; 
+    font-size: 16px; 
+    margin: 0px;  /* top right bottom left */
+    padding: 0px;
+    color: #555555;
+}
+
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0.2rem 2rem 2rem 2rem; /* 1rem: 16px */
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ---------------------------------------------*/
+/*                 CSS 추가                     */
+/* ---------------------------------------------*/
+.content {
+  width: 80%;
+  margin: 0px auto;
+}
+
+a:link{  /* 방문전 상태 */
+  text-decoration: none; /* 밑줄 삭제 */
+  color: #555555;
+}
+
+a:visited{  /* 방문후 상태 */
+  text-decoration: none; /* 밑줄 삭제 */
+  color: #555555;
+}
+
+a:hover{  /* A 태그에 마우스가 올라간 상태 */
+  text-decoration: none; /* 밑줄 출력 */
+  color: #7777FF;
+}
+
+a:active{  /* A 태그를 클릭한 상태 */
+  text-decoration: none; /* 밑줄 출력 */
+  color: #7777FF;
+}
+
+li {
+  list-style: none;
+}
+
+.table_basic {
+  border: solid 1px #AAAAAA; 
+  border-collapse: collapse;
+  margin: 0px auto;
+}
+
+.table_center {
+  width: 70%;
+  border: none; 
+  border-collapse: collapse;
+  margin: 0px auto;
+}
+
+.table_underline {
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 1px #AAAAAA; 
+  border-left: none;
+}
+
+* {
+  font-size: 16px;
+  padding: 0px;
+  margin: 5px 0px;
+}
+
+.copyright {
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px 0px;
+  border-top: 1px solid #eeeeee;
+}
+
+.title_line {
+  text-align: center;
+  border-bottom: solid 3px #555555;
+  margin: 20px auto;
+  font-size: 24px;    
+}
+
+.title_line_left {
+  text-align: left;
+  border-bottom: solid 3px #555555;
+  margin: 20px auto;
+  font-size: 24px;    
+}
+
+.menu_line {
+  text-align: right;
+  width: 80%;
+  border-bottom: dotted 1px #777777;
+    margin: 20px auto;
+  clear: both;
+} 
+
+.div_row{
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center;     /* 수직 가운데 정렬 */ 
+  gap: 5px
+}
+
+.div_row_left {
+  display: flex;
+  justify-content: flex-start; /* 수평 가운데 정렬 */
+  align-items: center;     /* 수직 가운데 정렬 */ 
+  gap: 5px
+}
+
+.div_row_label {
+  width: 100px;
+  text-align: right;
+  margin-right: 5px;
+  padding-right: 5px;
+  background-color: #eeeeee;
+}
+
+.div_row_content {
+  width: 30%;
+  text-align: left;
+}
+
+.icon {
+  width: 18px;
+  margin-right: 2px;
+}
+
+.aside_right {
+  text-align: right;
+  font-size: 0.9em; /* 부모 글꼴 크기 대비 90%로 출력 */
+}
+
+.aside_right a {
+  font-size: 1.0em;
+}
+
+/* ASIDE 메뉴 세로 구분선 */
+.aside_menu_divide { /* 서브 메뉴의 세로 구분선 */
+  color: #AAAAAA;
+  font-size: 0.8em; /* 부모 글자 크기에 비해서 80%로 출력 */
+  vertical-align: 0%;  /* 0%는 bottom 기준 */
+  margin: 0px 5px;
+}
+  
+/* ASIDE 메뉴 세로 구분선 */
+.aside_menu_line {
+    width: 100%;
+    border-bottom: dotted 1px #777777;
+    margin: 2px 0px 10px 0px; /* top -> right -> bottom -> left */
+    clear: both;
+}
+
+.table_basic {
+  border-collapse: collapse;
+  margin: 2px auto;
+  width: 100%;
+}
+
+/* 1em 기본값 : 16px, 주변 태그의 글자크기를 1em으로 인식
+    DIV 태그가 20px 일경우 자식태그가 0.5em이면 최종적으로 10px이 적용됨.
+    DIV 태그가 20px 일경우 자식태그가 1em이면 최종적으로 20px이 적용됨.
+    DIV 태그가 20px 일경우 자식태그가 1.5em이면 최종적으로 30px이 적용됨.
+*/
+.th_basic {
+  font-size: 0.8em;
+  border-bottom: solid 3px #DDDDDD; 
+}
+
+.th_bs {
+  text-align: center;
+}
+
+.td_basic {
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 1px #DDDDDD;
+  border-left: none;
+  text-align: center;
+}
+
+.td_left {
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 1px #DDDDDD;
+  border-left: none;
+  text-align: left;
+}
+
+.td_bs {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.td_bs_left {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.input_div {
+  margin-bottom: '8px';
+}
+
+.input_div label {
+  text-align: left;
+  width: 100%;
+  padding-left: 10px;
+}
+
+/* 화면 내용 하단 메뉴 배치 */
+.content_body_bottom {
+  clear: both;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+
+.content_bottom {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.bottom_menu {
+  text-align: center; 
+  margin: 20px auto;
+  clear: both;  /* 앞쪽 태그의 float 효과를 제거함. */
+}
+
+.li_none {
+  list-style: none;
+  margin: 15px 10px;
+}
+
+.li_none_left {
+  text-align: left;
+  list-style: none;
+  margin: 15px 10px;
+}
+
+.li_warning { /* 경고 메시지 */
+  list-style: none;
+  margin: 15px 10px;
+  color: #FF6600;
+}
+
+.li_error { /* 에러 메시지 */
+  list-style: none;
+  margin: 15px 10px;
+  color: #FF0000;
+}
+
+.li_right {
+  text-align: right;
+  list-style: none;
+  margin: 20px auto;
+  padding-right: 20px;
+}
+  
+.fieldset_basic {
+  width: 90%; 
+  margin: 10px auto; 
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  padding: 10px;
+}
+
+.legend_basic {
+  margin-left: 30px; 
+  border: solid 1px #999999; 
+  background-color: #A6C2FF; 
+  color: #FFFFFF;
+}
